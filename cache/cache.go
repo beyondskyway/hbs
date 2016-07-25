@@ -41,6 +41,7 @@ func Init() {
 
 }
 
+// 一分钟刷新一次内存
 func LoopInit() {
 	for {
 		time.Sleep(time.Minute)

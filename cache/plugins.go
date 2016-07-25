@@ -68,7 +68,7 @@ func GetPlugins(hostname string) []string {
 		dirs[i] = dir
 		i++
 	}
-
+    // 避免对plugins取MD5值时相同plugins但MD5值不一样
 	sort.Strings(dirs)
 	return dirs
 }
